@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+:root {
+  --color-tooltip: #000;
+  --color-on-tooltip: #fff;
+}
+
+.main {
+  padding: 60px;
+}
+.title {
+  font-size: 15px;
+  font-weight: 600;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.info {
+  width: 20px;
+  height: 20px;
+  background: #cfcfd4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 10px;
+  cursor: pointer;
+}
+.info:hover {
+  background: #3139f2;
+  color: #fff;
+  transition: 0.5s;
+}
+.main-card {
+  padding: 20px;
+  background: #f7fafd !important;
+}
+
+.find-homes {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  .home-img {
+    img {
+      width: 100%;
+      height: 210px;
+    }
+  }
+  .home-price-section {
+    // display: flex;
+    // align-items: center;
+    // flex: 1 1;
+    // .price {
+    //   width: 50%;
+    // }
+    // .title {
+    //   display: flex;
+    //   justify-content: center;
+    //   width: 50%;
+    // }
+  }
+
+  .down-payment {
+    .head {
+      margin-bottom: 10px;
+    }
+  }
+
+  .custom-value {
+    display: flex;
+    .amount {
+      border-right: 2px solid #ccc;
+    }
+  }
+}
+
+.interest-rate,
+.homeowner-insurance,
+.hoa-fees {
+  .custom-value {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.view-chart {
+  padding: 20px;
+  .monthly-payment {
+    .head {
+      display: flex;
+      font-weight: 400;
+      width: 50%;
+      .title {
+        font-size: 40px;
+      }
+      .desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .home-price-progress {
+      width: 50%;
+    }
+  }
+
+  .accordion {
+    margin-top: 30px;
+  }
+  .pie-chart {
+    flex-grow: 8;
+  }
+  .pie-chart h2:before {
+    content: "$";
+    font-size: 23px;
+    float: left;
+  }
+  .pie-chart .text {
+    transform: translate(-11px, 10px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pie-chart .text span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.payment-breakdown {
+  display: flex;
+  gap: 30px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+tr {
+  border-bottom: 1px solid #ccc;
+}
+tfoot tr {
+  border: none;
+}
+tr td:last-child {
+  text-align: right;
+}
+
+td {
+  text-align: left;
+  padding: 15px 0px;
+}
+.item {
+  display: flex;
+  align-items: center;
+}
+.color-bullet-principal,
+.color-bullet-insurance,
+.color-bullet-hoafees {
+  display: flex;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+}
+.color-bullet-principal {
+  background: rgb(0, 143, 251);
+}
+.color-bullet-insurance {
+  background: rgb(0, 227, 150);
+}
+.color-bullet-hoafees {
+  background: rgb(254, 176, 25);
+}
+
+table {
+  .MuiFormControl-root {
+    width: 130px;
+  }
+}
+
+.apexcharts-legend {
+  top: 5px !important;
+  right: 52px !important;
+}
+
+/*----Material-override----*/
+.MuiInputAdornment-filled.MuiInputAdornment-positionStart:not(.MuiInputAdornment-hiddenLabel) {
+  margin-top: 6px !important;
+}
+.MuiFilledInput-input {
+  padding: 17px 12px 10px !important;
+}
+.Component-root-12 {
+  height: 250px !important;
+}
+.MuiAppBar-root {
+  border-radius: 10px;
+}
+.MuiAlert-filledWarning {
+  background-color: rgb(50, 50, 50) !important;
+}
+.MuiTab-wrapper {
+  font-size: 14px !important;
+  text-transform: capitalize !important;
+}
+.PrivateTabIndicator-root-6 {
+  left: 7px !important;
+  width: 140px !important;
+}
+.MuiSlider-rail {
+  height: 7px !important;
+}
+
+.MuiSlider-track {
+  height: 7px !important;
+}
+
+.MuiSlider-thumb {
+  width: 24px !important;
+  height: 24px !important;
+  margin-top: -9px !important;
+}
+/*----Material-override----*/

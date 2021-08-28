@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+:root {
+  --color-tooltip: #000;
+  --color-on-tooltip: #fff;
+}
+
+.main {
+  padding: 60px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.info {
+  width: 20px;
+  height: 20px;
+  background: #cfcfd4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.info:hover {
+  background: #3139f2;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-card {
+  padding: 20px;
+  background: #f7fafd !important;
+}
+
+.find-homes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.find-homes .home-img img {
+  width: 100%;
+  height: 210px;
+}
+
+.find-homes .down-payment .head {
+  margin-bottom: 10px;
+}
+
+.find-homes .custom-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.find-homes .custom-value .amount {
+  border-right: 2px solid #ccc;
+}
+
+.interest-rate .custom-value,
+.homeowner-insurance .custom-value,
+.hoa-fees .custom-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.view-chart {
+  padding: 20px;
+}
+
+.view-chart .monthly-payment .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  width: 50%;
+}
+
+.view-chart .monthly-payment .head .title {
+  font-size: 40px;
+}
+
+.view-chart .monthly-payment .head .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.view-chart .monthly-payment .home-price-progress {
+  width: 50%;
+}
+
+.view-chart .accordion {
+  margin-top: 30px;
+}
+
+.view-chart .pie-chart {
+  -webkit-box-flex: 8;
+      -ms-flex-positive: 8;
+          flex-grow: 8;
+}
+
+.view-chart .pie-chart h2:before {
+  content: "$";
+  font-size: 23px;
+  float: left;
+}
+
+.view-chart .pie-chart .text {
+  -webkit-transform: translate(-11px, 10px);
+          transform: translate(-11px, 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.view-chart .pie-chart .text span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.payment-breakdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1px solid #ccc;
+}
+
+tfoot tr {
+  border: none;
+}
+
+tr td:last-child {
+  text-align: right;
+}
+
+td {
+  text-align: left;
+  padding: 15px 0px;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.color-bullet-principal,
+.color-bullet-insurance,
+.color-bullet-hoafees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+}
+
+.color-bullet-principal {
+  background: #008ffb;
+}
+
+.color-bullet-insurance {
+  background: #00e396;
+}
+
+.color-bullet-hoafees {
+  background: #feb019;
+}
+
+table .MuiFormControl-root {
+  width: 130px;
+}
+
+.apexcharts-legend {
+  top: 5px !important;
+  right: 52px !important;
+}
+
+/*----Material-override----*/
+.MuiInputAdornment-filled.MuiInputAdornment-positionStart:not(.MuiInputAdornment-hiddenLabel) {
+  margin-top: 6px !important;
+}
+
+.MuiFilledInput-input {
+  padding: 17px 12px 10px !important;
+}
+
+.Component-root-12 {
+  height: 250px !important;
+}
+
+.MuiAppBar-root {
+  border-radius: 10px;
+}
+
+.MuiAlert-filledWarning {
+  background-color: #323232 !important;
+}
+
+.MuiTab-wrapper {
+  font-size: 14px !important;
+  text-transform: capitalize !important;
+}
+
+.PrivateTabIndicator-root-6 {
+  left: 7px !important;
+  width: 140px !important;
+}
+
+.MuiSlider-rail {
+  height: 7px !important;
+}
+
+.MuiSlider-track {
+  height: 7px !important;
+}
+
+.MuiSlider-thumb {
+  width: 24px !important;
+  height: 24px !important;
+  margin-top: -9px !important;
+}
+
+/*----Material-override----*/
+/*# sourceMappingURL=style.css.map */
